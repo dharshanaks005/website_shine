@@ -1,0 +1,215 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333; /* Dark background for header */
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* Center navigation links */
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px; /* Space between navigation links */
+}
+
+nav ul li a {
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px 15px; /* Add padding for better clickability */
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Add background on hover */
+    border-radius: 5px; /* Round edges on hover */
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Stack pages vertically */
+}
+
+.page {
+    display: flex; /* Each page is a flex container */
+    height: 100vh; /* Full viewport height */
+    background-color: #f4f4f4; /* Light gray background for pages */
+    align-items: center; /* Center content vertically */
+}
+
+.left-side {
+    background-color: #ffffff; /* White background for the text area */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    width: 50%;
+    color: #333; /* Dark text color for better visibility */
+    padding: 20px; /* Add padding */
+    border-right: 2px solid #eee; /* Subtle divider */
+}
+
+.left-side h1 {
+    font-size: 2.5em; /* Adjust font size as needed */
+    margin: 0; /* Remove default margin */
+}
+
+.left-side p {
+    font-size: 1.2em; /* Increase readability */
+}
+
+.right-side {
+    width: 50%;
+    display: flex;
+    justify-content: center; /* Center the image */
+    align-items: center; /* Center image vertically */
+}
+
+.responsive-image {
+    max-width: 100%; /* Responsive image size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.options {
+    display: grid; /* Use grid for layout */
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Space between options */
+}
+
+.option {
+    background-color: #e7e7e7; /* Light background for options */
+    text-align: center; /* Center text */
+    padding: 15px; /* Add padding */
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.option:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.circle-icon {
+    width: 50px; /* Fixed size for icons */
+    height: 50px; /* Fixed size for icons */
+    margin: auto; /* Center icon */
+}
+
+.phone {
+    position: relative; /* Allow absolute positioning of inner elements */
+}
+
+.phone-image {
+    max-width: 100%; /* Responsive phone image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.scrolling-content {
+    position: absolute; /* Position on top of the phone image */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center text */
+    text-align: center; /* Center text */
+    color: #000; /* Text color */
+}
+
+.rectangle-container {
+    display: flex; /* Flex container for rectangles */
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: center; /* Center rectangles */
+    margin: 20px 0; /* Add spacing */
+}
+
+.rectangle {
+    width: 150px; /* Fixed width for rectangles */
+    height: 100px; /* Fixed height for rectangles */
+    margin: 10px; /* Space between rectangles */
+    display: flex; /* Flex container */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    font-size: 1.5em; /* Adjust font size */
+    color: white; /* White text color */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.violet { background-color: violet; }
+.dark-pink { background-color: darkpink; }
+.maroon { background-color: maroon; }
+.yellow { background-color: yellow; }
+
+.teachers-section {
+    padding: 50px 20px; /* Add padding for teachers section */
+    background-color: #ffffff; /* White background */
+    text-align: center; /* Center text */
+}
+
+.white-box {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 20px; /* Add padding */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.teachers-grid {
+    display: grid; /* Grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid */
+    gap: 15px; /* Space between cards */
+}
+
+.teacher-card {
+    background-color: #e7e7e7; /* Light background for teacher cards */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Add padding */
+    text-align: center; /* Center text */
+}
+
+.teacher-photo {
+    width: 100%; /* Responsive image size */
+    border-radius: 10px; /* Rounded corners for images */
+}
+
+.last-page-section {
+    padding: 50px 20px; /* Padding for last page */
+    text-align: center; /* Center text */
+}
+
+.amoeba-shape {
+    position: relative; /* Position relative for absolute children */
+    margin-bottom: 20px; /* Space below amoeba shape */
+}
+
+.maker-photo {
+    width: 100px; /* Fixed size for maker photos */
+    border-radius: 50%; /* Round images */
+}
+
+.social-media-icons {
+    margin: 20px 0; /* Space around icons */
+}
+
+.social-media-icons a {
+    margin: 0 10px; /* Space between icons */
+}
+
+.navigation-options {
+    display: flex; /* Flexbox for navigation options */
+    justify-content: center; /* Center options */
+    margin: 20px 0; /* Space around options */
+}
+
+.option-group {
+    margin: 0 20px; /* Space between option groups */
+}
+
+footer {
+    text-align: center; /* Center footer text */
+    background-color: #333; /* Dark background for footer */
+    color: white; /* White text color */
+    padding: 15px 0; /* Padding for footer */
+}
